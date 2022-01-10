@@ -16,12 +16,14 @@ def solution(A, K):
         for x in range(0,len(A)-K):
             A_rotated[x+K] = A[x]
 
-        #A_buffer.reverse()
         #print(A_rotated[0:K])
         A_rotated[0:K] = A_buffer
     
-        return A_rotated
     else:
         A_rotated = A
 
-print(solution([1, 2, 3, 4],4))
+    return A_rotated
+
+
+
+print(solution([1, 2, 3, 4],1))
